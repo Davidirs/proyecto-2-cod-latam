@@ -32,12 +32,12 @@ a {
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
+*//* 
 main {
     max-width: 1200px;
     margin: auto; 
 }
-
+ */
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
 *    "estilos generales". Una buena idea sería comenzar por el <body> ;)
@@ -56,15 +56,18 @@ main {
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
 
+/*Colores */
+
+
 body {
-    background-color: #fbfbfb;
+    background-color: #f0efef;
     text-align: center;
     font-size: 18px;
     line-height: 1.2;
 }
 
 header {
-    background-color: #fbfbfb;
+    background-color: #fff;
     height: 90px;
     position: fixed;
     width: 100%;
@@ -76,6 +79,11 @@ header {
           0 0  0 2px rgb(255,255,255),
           0 0 1em rgba(0,0,0,0.3);
 }
+header a:hover{
+    
+    color:rgb(6, 74, 232) ;
+}
+
 .flex-row{
     display: flex;
     align-items: center;
@@ -84,7 +92,7 @@ header {
     justify-content: space-evenly;
 }
 footer {
-    background-color: #af599e;
+    background-color:#333;/* #af599e;*/
     color: #fbfbfb;
     height: 90px;
     display: flex;
@@ -93,23 +101,40 @@ footer {
 }
 
 .boton {
-    background-color: #af599e;
+    
+    background:rgb(27, 27, 218);
+    background: linear-gradient(90deg, rgb(27, 27, 218) 0%, rgb(6, 74, 232) 50%);
     color: #fbfbfb;
     font-size: 20px;
     border-radius: 100px;
 }
-
-
-#contacto article {
-    background-color: rgba(175, 89, 158, 0.3);
-    color: #0f0f0f;
-    padding:20px;
-    border-radius: 10px;
-    margin-bottom: 15%;
+.boton:hover{
+    
+    background: linear-gradient(-90deg, rgb(27, 27, 218) 0%, rgb(6, 74, 232) 50%);
 }
 
-#contacto img{
-    width: 60px;
+#inicio article {
+    background-color: #fff;/* rgba(175, 89, 158, 0.3); */
+    color: #0f0f0f;
+    padding:3%;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+#contacto article {
+    
+    background-color: #fff;/* rgba(175, 89, 158, 0.3); */
+    color: #0f0f0f;
+    padding:3%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+#contacto a{
+    font-size: 70px;
+}
+#contacto a:hover{
+    
+    color:rgb(6, 74, 232) ;
 }
 
 h1 {
@@ -122,7 +147,10 @@ h2 {
 
 section{
     min-height: 100vh;
-    margin: 0 5% 0 5%;
+    max-width: 1200px;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     padding-bottom: 5%;
     padding-top: 100px;
 
