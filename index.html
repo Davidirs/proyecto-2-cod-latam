@@ -13,23 +13,31 @@
 </head>
 
 <body>
-  <header class="flex-row bgBlue">
-    <nav>
-      <ul>
-        <li>
-          <a><img src="img/logo.png" alt="logo-eidos" /></a>
-        </li>
-        <li><a href="#inicio" class="background-blue">Inicio</a></li>
+  <header class="item-header">
+    <nav  class="navbar">
+      <div class="menu-icon" id="menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul class="menu desktop" id="menu">
+        <li class="active"><a href="#inicio" >Inicio</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
+    <ul  class="logo tablet desktop" >
+      <li>
+        <a><img src="img/logo.png" alt="logo-eidos" /></a>
+      </li>
+    </ul>
   </header>
 
   <main>
     <section id="inicio">
       <article>
-        <img id="foto" src="img/perfil.jpg" alt="Imagen-kitty" />
-        <h1>Hola! Soy David Reyes</h1>
+        <img id="foto" src="img/perfil.jpg" alt="David Reyes" />
+        
+        <div class="col-2"><!--Agregado para controlar el comportamiento de esta segunda parte
+        sin afectar la imagen-->
+        <h1>👋Hola, Soy David Reyes!</h1>
         <p>
           Me complace presentarme como programador con experiencia en <strong>HTML, CSS y JavaScript,</strong>
           estoy emocionado de compartir este trabajo contigo diseñado con estos lenguajes de programación.
@@ -40,6 +48,7 @@
           al mundo tecnológico que está emergiendo y proveer soluciones e innovaciones.
         </p>
         <a href="#" class="boton">Descargar mi CV</a>
+        </div>
       </article>
     </section>
   </main>
@@ -69,7 +78,7 @@
         <strong><i>David Reyes</i></strong>
       </p>
     </article>
-    <ul class="flex-row space-evenly">
+    <ul class="link-contacto">
       <li>
         <a href="mailto:reyisaccgmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
       </li>
@@ -86,7 +95,7 @@
   </section>
 
   <footer>
-    <p>Proyecto 2 Código Pa'lante | Desarrollado por David Reyes | &copy 2023</p>
+    <p>Proyecto 2 Código Pa'lante 🚀 | Desarrollado por David Reyes | &copy 2023</p>
   </footer>
 
   <script src="js/main.js"></script>
