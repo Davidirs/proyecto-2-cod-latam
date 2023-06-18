@@ -36,21 +36,66 @@ body {
     text-align: center;
     font-size: 18px;
     line-height: 1.2;
+    padding-top: 100px;
+}
+article {
+    background-color: #fff;
+    /* rgba(175, 89, 158, 0.3); */
+    color: #0f0f0f;
+    padding: 3%;
+    border-radius: 10px;
 }
 
 
-/* mobile */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    padding: 16px;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+
+}
+
+footer {
+    background-color: #333;
+    /* #af599e;*/
+    color: #fbfbfb;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .tablet,
 .desktop {
     display: none;
 }
 
-header {
+#header-main {
     background-color: #fff;
     min-height: 90px;
     position: fixed;
     width: 100%;
-
+    padding:0px 5% ;
+top:0;
     font-weight: bold;
     box-shadow:
         inset 0 0 0 2px rgb(255, 255, 255),
@@ -79,22 +124,14 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 
-footer {
-    background-color: #333;
-    /* #af599e;*/
-    color: #fbfbfb;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.boton {
-
+.button {
+    
+    display: inline-block;
     background: rgb(27, 27, 218);
     background: linear-gradient(90deg, rgb(27, 27, 218) 0%, rgb(6, 74, 232) 50%);
     color: #fbfbfb;
@@ -103,29 +140,41 @@ footer {
     width: 200px;
 }
 
+
+
 .boton:hover {
 
     background: linear-gradient(-90deg, rgb(27, 27, 218) 0%, rgb(6, 74, 232) 50%);
 }
 
+
+
+/* header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+} */
+
+#foto {
+    max-width: 400px;
+    width: auto;
+    margin: 20px;
+    border-radius: 50%;
+}
+
 #inicio article {
-    background-color: #fff;
-    /* rgba(175, 89, 158, 0.3); */
-    color: #0f0f0f;
-    padding: 3%;
-    border-radius: 10px;
-    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#contacto article {
 
-    background-color: #fff;
-    /* rgba(175, 89, 158, 0.3); */
-    color: #0f0f0f;
-    padding: 3%;
-    border-radius: 10px;
-    margin-bottom: 5%;
+
+#inicio p {
+    margin-bottom: 20px;
 }
+
 
 #contacto a {
     font-size: 70px;
@@ -136,58 +185,8 @@ footer {
     color: rgb(6, 74, 232);
 }
 
-h1 {
-    font-size: 36px;
-}
 
-h2 {
-    font-size: 28px;
-}
 
-section {
-    min-height: 100vh;
-    max-width: 1200px;
-    margin: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 100px;
-
-}
-
-/* header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-} */
-
-p {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-#foto {
-    max-width: 400px;
-    width: auto;
-    margin: 20px;
-    border-radius: 50%;
-}
-
-a {
-    padding: 16px;
-}
-
-#inicio p {
-    margin-bottom: 20px;
-}
-
-#inicio article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .col-2 {
     display: flex;
@@ -230,7 +229,9 @@ a {
 }
 
 .menu a:hover {
-    color: rgb(6, 74, 232);
+    border :1px solid white;
+    color: rgb(6, 74, 232);    
+    box-shadow: 0px 3px 0px 0px  rgb(6, 74, 232);
 }
 
 .show-menu {
@@ -250,10 +251,45 @@ a {
 }
 
 .active {
-    color: white;
-    background-color: #333 !important;
+    border :1px solid rgb(146, 177, 255) !important; 
+    box-shadow: 0px 3px 0px 0px  rgb(6, 74, 232);
+    border-radius: 5px 5px 0px 0px;
 }
-/* tablet */
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card {   
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+    background-color:#333;
+    max-width: 320px;
+    box-shadow: 0px 3px 0px 0px rgb(6, 74, 232);
+}
+
+.card img {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+.card h3{
+    margin: 10px;
+}
+.card .button{
+    
+    margin: 20px;
+    padding: 10px;
+    
+    box-shadow: 0px 3px 3px 0px rgb(255, 255, 255, .2);
+}
+
+
+
+
+
+/************************ tablet ******************************/
 @media (min-width: 768px) {
     .tablet {
         display: flex;
@@ -274,7 +310,7 @@ a {
 
 }
 
-/* desktop */
+/************************** desktop ***************************/
 @media (min-width: 1024px) {
     .desktop {
         display: flex;

@@ -6,26 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>David Reyes</title>
-  <link rel="icon" href="img/favicon.png" />
+  <link rel="icon" href="assets/img/favicon.png" />
   <link rel="stylesheet" href="css/styles.css" />
-  
+
   <script src="https://kit.fontawesome.com/9fd95bcc65.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header class="item-header">
-    <nav  class="navbar">
+  <header id="header-main" class="item-header">
+    <nav class="navbar">
       <div class="menu-icon" id="menu-icon">
         <i class="fa fa-bars"></i>
       </div>
       <ul class="menu desktop" id="menu">
-        <li class="active"><a href="#inicio" >Inicio</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li class="menu-item"><a href="#inicio" class="active">Inicio</a></li>
+        <li class="menu-item"><a href="#portfolio">Portafolio</a></li>
+        <li class="menu-item"><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-    <ul  class="logo tablet desktop" >
+    <ul class="logo tablet desktop">
       <li>
-        <a><img src="img/logo.png" alt="logo-eidos" /></a>
+        <a><img src="assets/img/logo.png" alt="logo-eidos" /></a>
       </li>
     </ul>
   </header>
@@ -33,26 +34,79 @@
   <main>
     <section id="inicio">
       <article>
-        <img id="foto" src="img/perfil.jpg" alt="David Reyes" />
-        
+        <img id="foto" src="assets/img/perfil.jpg" alt="David Reyes" />
+
         <div class="col-2"><!--Agregado para controlar el comportamiento de esta segunda parte
         sin afectar la imagen-->
-        <h1>👋Hola, Soy David Reyes!</h1>
-        <p>
-          Me complace presentarme como programador con experiencia en <strong>HTML, CSS y JavaScript,</strong>
-          estoy emocionado de compartir este trabajo contigo diseñado con estos lenguajes de programación.
-          Soy un un joven, proactivo, apasionado en la formación aprendizaje del desarrollo
-          web y mobile, he trabajado en este proyecto que demuestra algunas de mis habilidades en estas tecnologías.
-          <br>
-          En este largo camino por recorrer voy con el ánimo y la dedicación para aportar un granito de arena
-          al mundo tecnológico que está emergiendo y proveer soluciones e innovaciones.
-        </p>
-        <a href="#" class="boton">Descargar mi CV</a>
+          <h1>👋Hola, Soy David Reyes!</h1>
+          <p>
+            Me complace presentarme como programador con experiencia en <strong>HTML, CSS y JavaScript,</strong>
+            estoy emocionado de compartir este trabajo contigo diseñado con estos lenguajes de programación.
+            Soy un un joven, proactivo, apasionado en la formación aprendizaje del desarrollo
+            web y mobile, he trabajado en este proyecto que demuestra algunas de mis habilidades en estas tecnologías.
+            <br>
+            En este largo camino por recorrer voy con el ánimo y la dedicación para aportar un granito de arena
+            al mundo tecnológico que está emergiendo y proveer soluciones e innovaciones.
+          </p>
+          <a href="#" class="button">Descargar mi CV</a>
         </div>
       </article>
     </section>
   </main>
 
+  <section id="portfolio">
+    <article>
+
+      <h2>Portafolio</h2>
+      <p>
+        Algunos trabajos Realizados con sus respectivos lenguajes
+      </p>
+      <div class="container-flex">
+
+        <div class="card">
+          <img src="assets/img/perfil.jpg" alt="">
+          <h3>Comprame.com.ve</h3>
+          <p>
+            Marketplace al alcance de tu mano</p>
+          <ul>
+            <li><a href="">Wordpress</a></li>
+            <li><a href="">Woocommerce</a></li>
+          </ul>
+<!-- 
+          <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
+          <a href="#" class="button">Ir</a>
+        </div>
+        <div class="card">
+          <img src="assets/img/perfil.jpg" alt="">
+          <h3>Comprame.com.ve</h3>
+          <p>
+            Marketplace al alcance de tu mano</p>
+          <ul>
+            <li><a href="">Wordpress</a></li>
+            <li><a href="">Woocommerce</a></li>
+          </ul>
+<!-- 
+          <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
+          <a href="#" class="button">Ir</a>
+        </div>
+        <div class="card">
+          <img src="assets/img/perfil.jpg" alt="">
+          <h3>Comprame.com.ve</h3>
+          <p>
+            Marketplace al alcance de tu mano</p>
+          <ul>
+            <li><a href="">Wordpress</a></li>
+            <li><a href="">Woocommerce</a></li>
+          </ul>
+<!-- 
+          <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
+          <a href="#" class="button">Ir</a>
+        </div>
+
+
+      </div>
+    </article>
+  </section>
   <section id="contacto">
     <article>
       <h2>¿Quieres que hablemos?</h2>
@@ -77,21 +131,24 @@
         Saludos cordiales,
         <strong><i>David Reyes</i></strong>
       </p>
+
+      <hr><br>
+      <ul class="link-contacto">
+        <li>
+          <a href="mailto:reyisaccgmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Davidirs" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/david-isacc-reyes/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://wa.me/584268691664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+      </ul>
     </article>
-    <ul class="link-contacto">
-      <li>
-        <a href="mailto:reyisaccgmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-      </li>
-      <li>
-        <a href="https://github.com/Davidirs" target="_blank"><i class="fa-brands fa-github"></i></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/david-isacc-reyes/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      </li>
-      <li>
-        <a href="https://wa.me/584268691664" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-      </li>
-    </ul>
   </section>
 
   <footer>
