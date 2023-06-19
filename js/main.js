@@ -1,9 +1,7 @@
-
-
+/*****Agrego un evento click al menú hamburguesa*****/
 const menuIcon = document.getElementById('menu-icon');
 const menu = document.getElementById('menu');
 
-//Agrego un evento click al menú hamburguesa
 menuIcon.addEventListener('click', function () {
     menu.classList.toggle('show-menu');
 });
@@ -21,13 +19,31 @@ menuIcon.addEventListener('click', function () {
     })
 } */
 
+
+/****************Función Activar items seleccionado****************/
 const menuItem = document.querySelectorAll('li.menu-item');
-console.log(menuItem[0]);
 menuItem.forEach(function (item) {
-    item.addEventListener('click', function(e){
+    item.addEventListener('click', function (e) {
         const currentItem = document.querySelector('.active');
         currentItem.classList.remove('active');
         e.target.classList.add('active');
 
-    
-})});
+
+    })
+});
+
+/**********************Función Dark Mode**************************/
+const darkMode = document.querySelectorAll('.modo-dark');
+const lightAndDark = document.querySelectorAll('.bg-light, .bg-dark');
+
+darkMode.forEach(function (i) {
+
+    i.addEventListener('click', function () {
+
+        lightAndDark.forEach(function (e) {
+            e.classList.toggle('bg-light');
+            e.classList.toggle('bg-dark');
+        })
+
+    })
+})

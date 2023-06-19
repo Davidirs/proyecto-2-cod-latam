@@ -13,15 +13,16 @@
 </head>
 
 <body>
-  <header id="header-main" class="item-header">
+  <header id="header-main" class="item-header bg-light">
+
     <nav class="navbar">
       <div class="menu-icon" id="menu-icon">
         <i class="fa fa-bars"></i>
       </div>
       <ul class="menu desktop" id="menu">
-        <li class="menu-item"><a href="#inicio" class="active">Inicio</a></li>
-        <li class="menu-item"><a href="#portfolio">Portafolio</a></li>
-        <li class="menu-item"><a href="#contacto">Contacto</a></li>
+        <li class="menu-item"><a href="#inicio" class="active "><i class="fa-solid fa-house mobile"></i> Inicio</a></li>
+        <li class="menu-item"><a href="#portfolio"><i class="fa-solid fa-briefcase mobile"></i> Portafolio</a></li>
+        <li class="menu-item"><a href="#contacto"><i class="fa-solid fa-address-book mobile"></i> Contacto</a></li>
       </ul>
     </nav>
     <ul class="logo tablet desktop">
@@ -29,11 +30,14 @@
         <a><img src="assets/img/logo.png" alt="logo-eidos" /></a>
       </li>
     </ul>
+    <li class="modo-dark bg-dark circle">
+      <a><i class="fa-solid fa-moon"></i></a>
+    </li>
   </header>
 
   <main>
     <section id="inicio">
-      <article>
+      <article class="bg-light">
         <img id="foto" src="assets/img/perfil.jpg" alt="David Reyes" />
 
         <div class="col-2"><!--Agregado para controlar el comportamiento de esta segunda parte
@@ -55,7 +59,7 @@
   </main>
 
   <section id="portfolio">
-    <article>
+    <article class="bg-light">
 
       <h2>Portafolio</h2>
       <p>
@@ -63,8 +67,13 @@
       </p>
       <div class="container-flex">
 
-        <div class="card">
-          <img src="assets/img/perfil.jpg" alt="">
+        <div class="card bg-dark">
+          <div class="img-container">
+            <a href="assets/img/comprame.jpg" target="_blank" class="bg-light">
+              <img src="assets/img/comprame.jpg" alt="Comprame ScreenShot" title="Click para ver la imagen">
+            </a>
+          </div>
+          
           <h3>Comprame.com.ve</h3>
           <p>
             Marketplace al alcance de tu mano</p>
@@ -72,12 +81,16 @@
             <li><a href="">Wordpress</a></li>
             <li><a href="">Woocommerce</a></li>
           </ul>
-<!-- 
+          <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
           <a href="#" class="button">Ir</a>
         </div>
-        <div class="card">
-          <img src="assets/img/perfil.jpg" alt="">
+        <div class="card bg-dark">
+          <div class="img-container">
+            <a href="assets/img/comprame.jpg" target="_blank" class="bg-light">
+              <img src="assets/img/perfil.jpg" alt="Comprame ScreenShot" title="Click para ver la imagen">
+            </a>
+          </div>
           <h3>Comprame.com.ve</h3>
           <p>
             Marketplace al alcance de tu mano</p>
@@ -85,12 +98,16 @@
             <li><a href="">Wordpress</a></li>
             <li><a href="">Woocommerce</a></li>
           </ul>
-<!-- 
+          <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
           <a href="#" class="button">Ir</a>
         </div>
-        <div class="card">
-          <img src="assets/img/perfil.jpg" alt="">
+        <div class="card bg-dark">
+          <div class="img-container">
+            <a href="assets/img/comprame.jpg" target="_blank" class="bg-light">
+              <img src="assets/img/perfil.jpg" alt="Comprame ScreenShot" title="Click para ver la imagen">
+            </a>
+          </div>
           <h3>Comprame.com.ve</h3>
           <p>
             Marketplace al alcance de tu mano</p>
@@ -98,7 +115,7 @@
             <li><a href="">Wordpress</a></li>
             <li><a href="">Woocommerce</a></li>
           </ul>
-<!-- 
+          <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
           <a href="#" class="button">Ir</a>
         </div>
@@ -108,7 +125,7 @@
     </article>
   </section>
   <section id="contacto">
-    <article>
+    <article class="bg-light">
       <h2>¿Quieres que hablemos?</h2>
       <p>
         Si estás interesado en mi trabajo y deseas comunicarte conmigo, ¡estoy encantado de recibir tus consultas y
@@ -151,7 +168,7 @@
     </article>
   </section>
 
-  <footer>
+  <footer class="bg-dark">
     <p>Proyecto 2 Código Pa'lante 🚀 | Desarrollado por David Reyes | &copy 2023</p>
   </footer>
 
