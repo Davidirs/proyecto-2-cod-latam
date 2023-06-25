@@ -47,3 +47,43 @@ darkMode.forEach(function (i) {
 
     })
 })
+
+
+/**********************Animar header**************************/
+const header = document.getElementById("header-main");
+var sticky = header.offsetTop;
+const menuItems =document.querySelectorAll(".menu-item");
+const logoImg = document.getElementById("logo-img");/* 
+const modoDark = document.getElementsByClassName("modo-dark"); */
+
+window.onscroll = function () { resizeHeader();};
+
+function resizeHeader() {// redimencionar el header
+
+    // si pasa del tamaño sticky 
+    if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
+        //reduce el padding
+        header.style.minHeight = "80px";   /* 
+        header.style.position = "Fixed";   
+        header.style.position = "Fixed";   
+        header.style.position = "Fixed";    */
+        //cambia el tamaño de la letra
+        menuItems.forEach(function (e) {
+            e.style.fontSize = "17px";
+        })
+        //resize logo
+        logoImg.style.width = "120px";/* 
+        document.body.style.marginTop="17%"; */
+    } else {
+        //sino los valores default
+        header.style.minHeight = "90px";/* 
+        header.style.position = "initial";    */
+        
+        menuItems.forEach(function (e) {
+            e.style.fontSize = "20px";
+        })
+        logoImg.style.width = "140px";
+
+    }
+
+}
