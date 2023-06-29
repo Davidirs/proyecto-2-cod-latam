@@ -82,6 +82,11 @@ footer {
     align-items: center;
 }
 
+strong {
+    color: #643BD5;
+    text-decoration: 1px double white;
+}
+
 /*************************Backgroud Colors**********************************/
 
 .bg-dark {
@@ -95,13 +100,6 @@ footer {
 
 }
 
-
-.tablet,
-.desktop {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-}
 
 .mobile {
     display: block;
@@ -120,6 +118,8 @@ footer {
         inset 0 0 0 2px rgb(255, 255, 255),
         0 0 1em rgba(0, 0, 0, 0.3);
     transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    z-index: 9999;
 
 
 }
@@ -206,6 +206,7 @@ footer {
         inset 0 0 0 2px #333,
         0 0 1em rgba(0, 0, 0, 0.3); */
 }
+
 .bg-banner2.bg-dark {
     background:
         linear-gradient(135deg,
@@ -222,10 +223,10 @@ footer {
 .bg-banner2.bg-light {
     background:
         linear-gradient(135deg,
-        rgba(0, 0, 0, 0) 15%,
-        #333 15%,
-        #333 25%,
-        rgba(0, 0, 0, 0) 25%),
+            rgba(0, 0, 0, 0) 15%,
+            #333 15%,
+            #333 25%,
+            rgba(0, 0, 0, 0) 25%),
         linear-gradient(135deg, #915CD4 0%, #A45EDA 40%, #643BD5);
     /*   box-shadow:
         inset 0 0 0 2px #333,
@@ -270,9 +271,18 @@ footer {
     min-height: 250px;
     margin-bottom: 3%;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#banner div {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 300px;
 }
 
 
@@ -487,6 +497,16 @@ hacer posision fixed no se me mueva el contenido */
     margin-bottom: 3%;
 }
 
+.img-side {
+    width: 50%;
+    padding: 5%;
+    transform: rotateY(180deg);
+}
+
+.img-inline {
+    display: none;
+}
+
 /*********Formulario de contacto******/
 
 .form-main {
@@ -499,18 +519,14 @@ hacer posision fixed no se me mueva el contenido */
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    #img-form{
-        width: 50%;
-        padding: 5%;
-        transform: rotateY(180deg);
-    }
+
     .main-wrapper {
         border-radius: 10px;
         padding: 45px;
         width: 40%;
         box-shadow: 0 0 5px 5px #00000020;
         /* backdrop-filter: blur(5px); */
-        background-color: #ffffff85;
+        background-color: #C5AAECde;
 
         @media screen and (max-width: 991px) {
             width: 70%;
@@ -521,10 +537,6 @@ hacer posision fixed no se me mueva el contenido */
         }
 
         .form-head {
-            font-size: 30px;
-            line-height: 40px;
-            font-weight: 600;
-            text-align: center;
             margin: 0px 0 25px;
         }
 
@@ -673,6 +685,16 @@ hacer posision fixed no se me mueva el contenido */
 
 }
 
+
+#go-top {
+    margin: 0 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
 /************************ tablet ******************************/
 @media (min-width: 768px) {
     .card {
@@ -683,6 +705,10 @@ hacer posision fixed no se me mueva el contenido */
         display: flex;
         opacity: 1;
         visibility: visible;
+    }
+
+    .desktop {
+        display: none;
     }
 
     p {
@@ -698,15 +724,15 @@ hacer posision fixed no se me mueva el contenido */
         justify-content: center;
     }
 
-}
+    .img-inline {
+        display: block;
+        width: 250px;
+    }
+    .img-inline.desktop {
+        display: none;
+    }
+    
 
-#go-top {
-    margin: 0 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
 }
 
 /************************** desktop ***************************/
@@ -848,5 +874,9 @@ hacer posision fixed no se me mueva el contenido */
         padding-top: 0;
         right: 6%;
     }
+    .img-inline.desktop{
+        display: block;
+    }
+
 
 }

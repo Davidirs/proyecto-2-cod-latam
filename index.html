@@ -12,7 +12,7 @@
   <script src="https://kit.fontawesome.com/9fd95bcc65.js" crossorigin="anonymous"></script>
 </head>
 
-<body >
+<body>
 
   <main>
     <section id="inicio">
@@ -21,7 +21,11 @@
 
         <div class="col-2"><!--Agregado para controlar el comportamiento de esta segunda parte
         sin afectar la imagen-->
-          <h1>👋Hola, Soy DAVID REYES!</h1>
+          <div class="container-flex">
+          <img  src=" assets/img/hey.svg" alt="" class="img img-inline  tablet">
+              <h1><strong>👋Hola, Soy DAVID REYES!</strong></h1>
+          </div>
+
           <p>
             Me complace presentarme como programador con experiencia en <strong>HTML, CSS y JavaScript,</strong>
             estoy emocionado de compartir este trabajo contigo diseñado con estos lenguajes de programación.
@@ -132,11 +136,14 @@
   </section>
 
   <div id="banner" class="bg-banner bg-dark">
-    <h3>subtitulo</h3>
-    <h1>Titulo</h1>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <a><i class="fa-solid fa-chevron-down"></i></a>
-        
+    <div>
+      <h3>Responsive / adaptativo</h3>
+      <h1>Para todos los <strong>DISPOSITIVOS</strong></h1>
+      <p>Visualiza esta página web en su versión mobile, tablet y desktop.</p>
+      <a><i class="fa-solid fa-chevron-down"></i></a>
+    </div>
+    <img src="assets/img/responsive.svg" alt="" class="img img-side tablet">
+
   </div>
 
 
@@ -173,6 +180,8 @@
         <li class="bg-dark">
           <a href="https://github.com/Davidirs" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
+        
+        <img  src="/assets/img/mobile.svg" alt="" class="img img-inline desktop">
         <li class="bg-dark">
           <a href="https://www.linkedin.com/in/david-isacc-reyes/" target="_blank"><i
               class="fa-brands fa-linkedin"></i></a>
@@ -184,53 +193,30 @@
     </article>
   </section>
   <section id="formulario">
-    <article  class="bg-banner2 bg-dark">
+    <article class="bg-banner2 bg-dark">
       <div class="form-main">
-        <img id="img-form" src="assets/img/form.svg" alt="" class="tablet">
+        <img src="assets/img/form.svg" alt="" class="img img-side tablet">
         <div class="main-wrapper">
-          <h2 class="form-head">Contact From</h2>
+          <h2 class="form-head">Contáctanos</h2>
           <form class="form-wrapper">
             <div class="form-card">
-              <input
-                class="form-input"
-                type="text"
-                name="full_name"
-                required="required"
-              />
-              <label class="form-label" for="full_name">Full Name</label>
+              <input class="form-input" type="text" name="full_name" required="required" />
+              <label class="form-label" for="full_name">Nombre y apellido</label>
             </div>
-  
+
             <div class="form-card">
-              <input
-                class="form-input"
-                type="email"
-                name="email"
-                required="required"
-              />
-              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" name="email" required="required" />
+              <label class="form-label" for="email">Direción de correo</label>
             </div>
-  
+
             <div class="form-card">
-              <input
-                class="form-input"
-                type="number"
-                name="phone_number"
-                required="required"
-              />
-              <label class="form-label" for="phone_number">Phone number</label>
+              <input class="form-input" type="number" name="phone_number" required="required" />
+              <label class="form-label" for="phone_number">Número de Teléfono</label>
             </div>
-  
+
             <div class="form-card">
-              <textarea
-                class="form-textarea"
-                maxlength="420"
-                rows="3"
-                name="phone_number"
-                required="required"
-              ></textarea>
-              <label class="form-textarea-label" for="phone_number"
-                >Address</label
-              >
+              <textarea class="form-textarea" maxlength="420" rows="3" name="coments" required="required"></textarea>
+              <label class="form-textarea-label" for="coments">Comentarios</label>
             </div>
             <div class="btn-wrap">
               <a class="button">Enviar </a>
@@ -242,14 +228,14 @@
   </section>
   <footer class="bg-dark">
     <p>Proyecto 2 Código Pa'lante 🚀 | Desarrollado por David Reyes | &copy 2023</p>
-    
-<a href="#" id="go-top" class="bg-light circle">
+
+    <a href="#" id="go-top" class="bg-light circle">
       <i class="fa-solid fa-chevron-up"></i>
     </a>
   </footer>
 
   <script src="js/main.js"></script>
-  
+
 </body>
 
 </html>
