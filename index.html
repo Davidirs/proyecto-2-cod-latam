@@ -21,8 +21,8 @@
 
         <div class="col-2"><!--Agregado para controlar el comportamiento de esta segunda parte
         sin afectar la imagen-->
-          <div class="container-flex">
-          <img  src=" assets/img/hey.svg" alt="" class="img img-inline  tablet">
+          <div class="container-flex h-custom">
+          <img  src=" assets/img/hey.svg" alt="" class="img img-inline animar tablet">
               <h1><strong>👋Hola, Soy DAVID REYES!</strong></h1>
           </div>
 
@@ -35,7 +35,7 @@
             En este largo camino por recorrer voy con el ánimo y la dedicación para aportar un granito de arena
             al mundo tecnológico que está emergiendo y proveer soluciones e innovaciones.
           </p>
-          <a href="#" class="button">Descargar mi CV</a>
+          <a href="/assets/cv.pdf" class="button" target="_blank">Descargar mi CV</a>
         </div>
       </article>
     </section>
@@ -88,12 +88,12 @@
           <p>
             Marketplace al alcance de tu mano</p>
           <ul>
-            <li><a href="">Wordpress</a></li>
-            <li><a href="">Woocommerce</a></li>
+            <li><a>Wordpress</a></li>
+            <li><a>Woocommerce</a></li>
           </ul>
           <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
-          <a href="#" class="button">Ir</a>
+          <a href="https://comprame.com.ve" target="_blank" class="button">Ir</a>
         </div>
         <div class="card bg-dark">
           <div class="img-container">
@@ -101,16 +101,15 @@
               <img src="assets/img/perfil.jpg" alt="Comprame ScreenShot" title="Click para ver la imagen">
             </a>
           </div>
-          <h3>Comprame.com.ve</h3>
+          <h3>Portafolio</h3>
           <p>
-            Marketplace al alcance de tu mano</p>
+            Estilo Windows 11 </p>
           <ul>
-            <li><a href="">Wordpress</a></li>
-            <li><a href="">Woocommerce</a></li>
+            <li><a>HTML, CSS y JS</a></li>
           </ul>
           <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
-          <a href="#" class="button">Ir</a>
+          <a href="https://davidirs.github.io/my-portfolio/" target="_blank" class="button">Ir</a>
         </div>
         <div class="card bg-dark">
           <div class="img-container">
@@ -118,12 +117,12 @@
               <img src="assets/img/perfil.jpg" alt="Comprame ScreenShot" title="Click para ver la imagen">
             </a>
           </div>
-          <h3>Comprame.com.ve</h3>
+          <h3>PrestaTools</h3>
           <p>
-            Marketplace al alcance de tu mano</p>
+            Alquila herramientas</p>
           <ul>
-            <li><a href="">Wordpress</a></li>
-            <li><a href="">Woocommerce</a></li>
+            <li><a href="">MockFlow</a></li>
+            <li><a href="">Bootstrap</a></li>
           </ul>
           <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
@@ -142,7 +141,7 @@
       <p>Visualiza esta página web en su versión mobile, tablet y desktop.</p>
       <a><i class="fa-solid fa-chevron-down"></i></a>
     </div>
-    <img src="assets/img/responsive.svg" alt="" class="img img-side tablet">
+    <img src="assets/img/responsive.svg" alt="" class="img img-side tablet animar">
 
   </div>
 
@@ -181,7 +180,7 @@
           <a href="https://github.com/Davidirs" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
         
-        <img  src="/assets/img/mobile.svg" alt="" class="img img-inline desktop">
+        <img  src="/assets/img/mobile.svg" alt="" class="img img-inline desktop animar">
         <li class="bg-dark">
           <a href="https://www.linkedin.com/in/david-isacc-reyes/" target="_blank"><i
               class="fa-brands fa-linkedin"></i></a>
@@ -195,31 +194,32 @@
   <section id="formulario">
     <article class="bg-banner2 bg-dark">
       <div class="form-main">
-        <img src="assets/img/form.svg" alt="" class="img img-side tablet">
+        <img src="assets/img/form.svg" alt="" class="img img-side tablet animar">
         <div class="main-wrapper">
           <h2 class="form-head">Contáctanos</h2>
-          <form class="form-wrapper">
+          <form class="form-wrapper" id="form">
             <div class="form-card">
-              <input class="form-input" type="text" name="full_name" required="required" />
+              <input class="form-input" type="text" name="full_name" required="required" id="full_name"/>
               <label class="form-label" for="full_name">Nombre y apellido</label>
             </div>
 
             <div class="form-card">
-              <input class="form-input" type="email" name="email" required="required" />
+              <input class="form-input" type="email" name="email" required="required" id="email" />
               <label class="form-label" for="email">Direción de correo</label>
             </div>
 
             <div class="form-card">
-              <input class="form-input" type="number" name="phone_number" required="required" />
+              <input class="form-input" type="number" name="phone_number" required="required" id="phone_number"/>
               <label class="form-label" for="phone_number">Número de Teléfono</label>
             </div>
 
             <div class="form-card">
-              <textarea class="form-textarea" maxlength="420" rows="3" name="coments" required="required"></textarea>
+              <textarea class="form-textarea" maxlength="420" rows="3" name="coments" required="required" id="coments"></textarea>
               <label class="form-textarea-label" for="coments">Comentarios</label>
             </div>
             <div class="btn-wrap">
-              <a class="button">Enviar </a>
+              <input type="submit" value="Enviar" class="button">
+              <!-- <a  type="submit">Enviar </a> -->
             </div>
           </form>
         </div>
@@ -229,7 +229,7 @@
   <footer class="bg-dark">
     <p>Proyecto 2 Código Pa'lante 🚀 | Desarrollado por David Reyes | &copy 2023</p>
 
-    <a href="#" id="go-top" class="bg-light circle">
+    <a href="#" id="go-top" class="bg-light circle animar">
       <i class="fa-solid fa-chevron-up"></i>
     </a>
   </footer>

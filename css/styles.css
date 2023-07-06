@@ -142,6 +142,7 @@ strong {
 }
 
 .link-contacto {
+    min-height: 250px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -155,6 +156,9 @@ strong {
 
 .link-contacto li:hover {
     box-shadow: 0px 3px 0px 0px #643BD5, 0px 5px 0px 0px #a45eda63;
+}
+.link-contacto img {
+    height: 200px;
 }
 
 .button {
@@ -268,7 +272,7 @@ strong {
 }
 
 #banner {
-    min-height: 250px;
+    min-height: 400px;
     margin-bottom: 3%;
     display: flex;
     flex-direction: row;
@@ -695,6 +699,32 @@ hacer posision fixed no se me mueva el contenido */
     height: 30px;
 }
 
+.animar{
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-name: updown;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes updown{
+    from{
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    to{
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  }
+  .h-custom{
+    height: 220px;
+  }
+  .tablet {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
 /************************ tablet ******************************/
 @media (min-width: 768px) {
     .card {
@@ -731,7 +761,9 @@ hacer posision fixed no se me mueva el contenido */
     .img-inline.desktop {
         display: none;
     }
-    
+    h-custom{
+        height: 200px;
+    }
 
 }
 
@@ -877,6 +909,5 @@ hacer posision fixed no se me mueva el contenido */
     .img-inline.desktop{
         display: block;
     }
-
-
+   
 }

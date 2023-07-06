@@ -69,4 +69,28 @@ function resizeHeader() {// redimencionar el header
 
     }
 
+    
+
 }
+/*************Formulario************** */ 
+
+    const formulario = document.getElementById("form");
+
+    
+    console.log(formulario);
+    formulario.addEventListener('submit' , function (e) {
+        let fullName = document.getElementById("full_name");
+        let email = document.getElementById("email");
+        let phoneNumber = document.getElementById("phone_number");
+        let comments = document.getElementById("coments");
+        
+        e.preventDefault();
+        let formObj = {
+            "name": fullName.value,
+            "email":email.value,
+            "phone":phoneNumber.value,
+            "comments":comments.value,
+        }
+        console.log(formObj)
+        
+    })
