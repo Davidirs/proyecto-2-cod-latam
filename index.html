@@ -49,7 +49,7 @@
           <i class="fa fa-bars"></i>
         </div>
         <div class="modo-dark"><!--  bg-dark circle -->
-          <a><i class="fa-solid fa-moon"></i></a>
+          <a><i  id="iconDarkMode" class="fa-solid fa-moon"></i></a>
         </div>
       </div>
       <nav class="navbar">
@@ -196,7 +196,7 @@
         <img src="assets/img/form.svg" alt="" class="img img-side tablet animar">
         <div class="main-wrapper">
           <h2 class="form-head">Contáctanos</h2>
-          <form class="form-wrapper" id="form">
+          <form class="form-wrapper" id="form" method="POST" action="php/enviar.php">
             <div class="form-card">
               <input class="form-input" type="text" name="full_name" required="required" id="full_name" />
               <label class="form-label" for="full_name">Nombre y apellido</label>

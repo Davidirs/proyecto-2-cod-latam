@@ -702,10 +702,10 @@ hacer posision fixed no se me mueva el contenido */
     display: none;
     justify-content: center;
     align-items: center;
-    
     right: 30px;
     position: fixed;
     bottom: 55px;
+    animation: 2s ease ;
 }
 
 .animar{

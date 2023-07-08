@@ -20,19 +20,19 @@ menuItem.forEach(function (item) {
 });
 
 /**********************Función Dark Mode**************************/
-const darkMode = document.querySelectorAll('.modo-dark');
+const darkMode = document.querySelector('.modo-dark');
 const lightAndDark = document.querySelectorAll('.bg-light, .bg-dark');
+let iconDarkMode = document.getElementById("iconDarkMode");
 
-darkMode.forEach(function (i) {
-
-    i.addEventListener('click', function () {
-
+darkMode.addEventListener('click', function () {
+        
         lightAndDark.forEach(function (e) {
             e.classList.toggle('bg-light');
             e.classList.toggle('bg-dark');
         })
+        iconDarkMode.classList.toggle("fa-moon");
+        iconDarkMode.classList.toggle("fa-sun");
     })
-})
 
 
 /**********************Animar header**************************/
@@ -41,6 +41,7 @@ let sticky = header.offsetTop;
 const menuItems = document.querySelectorAll(".menu-item");
 const logoImg = document.getElementById("logo-img");/* 
 const modoDark = document.getElementsByClassName("modo-dark"); */
+const goTop = document.getElementById("go-top");
 
 window.onscroll = function () { resizeHeader(); };
 
@@ -57,16 +58,18 @@ function resizeHeader() {// redimencionar el header
         })
         //resize logo
         logoImg.style.width = "120px";
+        goTop.style.display="flex";
     } else {
         //sino los valores default
         header.style.minHeight = "90px";
         header.style.position = "relative";
-
+        
         menuItems.forEach(function (e) {
             e.style.fontSize = "20px";
         })
         logoImg.style.width = "140px";
-
+        
+        goTop.style.display="none";
     }
 
     
