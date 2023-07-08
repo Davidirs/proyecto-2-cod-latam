@@ -40,7 +40,7 @@ article {
 
 
 h1 {
-    font-size: 36px;
+    font-size: 250%;
 }
 
 h2 {
@@ -142,7 +142,6 @@ strong {
 }
 
 .link-contacto {
-    min-height: 250px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -298,9 +297,9 @@ strong {
 } */
 
 #foto {
-    max-width: 400px;
-    width: 100%;
-    margin: 20px;
+    width: 50vh;
+    max-width: 500px;
+    margin: 10px;
     border-radius: 50%;
     border: 5px solid white;
 }
@@ -309,13 +308,14 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
+    /* 
 
-
-#inicio p {
-    margin-bottom: 20px;
-}
+    #inicio p {
+        margin-bottom: 20px;
+    } */
 
 
 #contacto a {
@@ -334,6 +334,13 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center
+}
+.col-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    
 }
 
 #logo {
@@ -692,11 +699,13 @@ hacer posision fixed no se me mueva el contenido */
 
 #go-top {
     margin: 0 3%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    
+    right: 30px;
+    position: fixed;
+    bottom: 55px;
 }
 
 .animar{
@@ -724,6 +733,11 @@ hacer posision fixed no se me mueva el contenido */
     display: none;
     opacity: 0;
     visibility: hidden;
+}
+
+.dos-border{
+    border-radius: 0 30%;
+    max-width: 400px;
 }
 /************************ tablet ******************************/
 @media (min-width: 768px) {
@@ -764,6 +778,18 @@ hacer posision fixed no se me mueva el contenido */
     h-custom{
         height: 200px;
     }
+    .col-3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: justify;
+        justify-content: center;
+        
+    }
+    #go-top {
+        display: block;
+        bottom: 30px;
+    }
 
 }
 
@@ -798,11 +824,15 @@ hacer posision fixed no se me mueva el contenido */
         font-size: 40px;
     }
 
-    /* 
-    #inicio article {
-        flex-direction: row;
+    
+    #inicio {
+        height: 80vh;
     }
- */
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
     .col-2 {
         align-items: flex-start;
         text-align: left;
@@ -906,8 +936,23 @@ hacer posision fixed no se me mueva el contenido */
         padding-top: 0;
         right: 6%;
     }
-    .img-inline.desktop{
-        display: block;
+    .img-inline{
+        
+        display: inline-block;
+        height: 15vh;
     }
+    
+#inicio article {
+    
+    height: 75vh;
+}
+
+.button{
+    margin: 10px;
+}
+.img-inline.desktop {
+    display: block;
+}
+
    
 }

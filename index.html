@@ -21,9 +21,9 @@
 
         <div class="col-2"><!--Agregado para controlar el comportamiento de esta segunda parte
         sin afectar la imagen-->
-          <div class="container-flex h-custom">
-          <img  src=" assets/img/hey.svg" alt="" class="img img-inline animar tablet">
-              <h1><strong>👋Hola, Soy DAVID REYES!</strong></h1>
+          <div class="container-flex">
+            <img src=" assets/img/hey.svg" alt="" class="img img-inline animar tablet">
+            <h1><strong>👋Hola, Soy DAVID REYES!</strong></h1>
           </div>
 
           <p>
@@ -31,11 +31,10 @@
             estoy emocionado de compartir este trabajo contigo diseñado con estos lenguajes de programación.
             Soy un joven, proactivo, apasionado en la formación aprendizaje del desarrollo
             web y mobile, he trabajado en este proyecto que demuestra algunas de mis habilidades en estas tecnologías.
-            <br>
             En este largo camino por recorrer voy con el ánimo y la dedicación para aportar un granito de arena
             al mundo tecnológico que está emergiendo y proveer soluciones e innovaciones.
           </p>
-          <a href="/assets/cv.pdf" class="button" target="_blank">Descargar mi CV</a>
+          <a href="assets/cv.pdf" class="button" target="_blank">Descargar mi CV</a>
         </div>
       </article>
     </section>
@@ -106,6 +105,7 @@
             Estilo Windows 11 </p>
           <ul>
             <li><a>HTML, CSS y JS</a></li>
+            <li><a>Actualmente en desarrollo</a></li>
           </ul>
           <!-- 
           <a href="https://comprame.com.ve">https://comprame.com.ve</a> -->
@@ -149,28 +149,27 @@
   <section id="contacto">
     <article class="bg-light">
       <h2>¿Quieres que hablemos?</h2>
-      <p>
-        Si estás interesado en mi trabajo y deseas comunicarte conmigo, ¡estoy encantado de recibir tus consultas y
-        comentarios!
-        Puedes contactarme utilizando cualquiera de los siguientes enlaces, además no te vayas sin visualizar mis redes.
-        Estaré encantado de responder a todas tus preguntas y discutir cualquier proyecto o colaboración que tengas en
-        mente.
-        <br><br>
-        Además, estoy abierto a oportunidades laborales y colaboraciones freelance. Si estás buscando un programador con
-        habilidades
-        en HTML, CSS y JavaScript para tu proyecto, no dudes en comunicarte conmigo. Estoy comprometido a ofrecer
-        soluciones eficientes
-        y de calidad que cumplan con tus necesidades y objetivos.
-        <br><br>
-        Aseguro una respuesta rápida y estaré encantado de programar una reunión o llamada para discutir en detalle tus
-        ideas y requerimientos. Estoy emocionado de trabajar contigo y de ser parte de tu próximo proyecto.
-        <br><br>
-        ¡Espero tener noticias tuyas pronto!
-        <br><br>
-        Saludos cordiales,
-        <strong><i>David Reyes</i></strong>
-      </p>
+      <div class="col-3">
 
+        <img src="assets/img/1.jpg" alt="" class="img img-side dos-border tablet">
+        <p>
+          Si estás interesado en mi trabajo y deseas comunicarte conmigo, ¡estoy encantado de recibir tus consultas y
+          comentarios!<br>
+          Puedes contactarme utilizando cualquiera de los siguientes enlaces, estoy abierto a oportunidades laborales
+          y colaboraciones freelance. Si estás buscando un programador con
+          habilidades
+          en HTML, CSS y JavaScript para tu proyecto, no dudes en comunicarte conmigo.<br> 
+          Estoy comprometido a ofrecer
+          soluciones eficientes y de calidad que cumplan con tus necesidades y objetivos. Estaré encantado de programar
+          una reunión o llamada para discutir en detalle tus
+          ideas y requerimientos. 
+        </p>
+      </div>
+<p>
+
+  ¡Espero tener noticias tuyas pronto! Saludos cordiales,
+  <strong><i>David Reyes</i></strong>
+</p>
       <hr><br>
       <ul class="link-contacto ">
         <li class="bg-dark">
@@ -179,8 +178,8 @@
         <li class="bg-dark">
           <a href="https://github.com/Davidirs" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
-        
-        <img  src="/assets/img/mobile.svg" alt="" class="img img-inline desktop animar">
+
+        <img src="assets/img/mobile.svg" alt="" class="img img-inline desktop animar">
         <li class="bg-dark">
           <a href="https://www.linkedin.com/in/david-isacc-reyes/" target="_blank"><i
               class="fa-brands fa-linkedin"></i></a>
@@ -199,7 +198,7 @@
           <h2 class="form-head">Contáctanos</h2>
           <form class="form-wrapper" id="form">
             <div class="form-card">
-              <input class="form-input" type="text" name="full_name" required="required" id="full_name"/>
+              <input class="form-input" type="text" name="full_name" required="required" id="full_name" />
               <label class="form-label" for="full_name">Nombre y apellido</label>
             </div>
 
@@ -209,12 +208,13 @@
             </div>
 
             <div class="form-card">
-              <input class="form-input" type="number" name="phone_number" required="required" id="phone_number"/>
+              <input class="form-input" type="number" name="phone_number" required="required" id="phone_number" />
               <label class="form-label" for="phone_number">Número de Teléfono</label>
             </div>
 
             <div class="form-card">
-              <textarea class="form-textarea" maxlength="420" rows="3" name="coments" required="required" id="coments"></textarea>
+              <textarea class="form-textarea" maxlength="420" rows="3" name="coments" required="required"
+                id="coments"></textarea>
               <label class="form-textarea-label" for="coments">Comentarios</label>
             </div>
             <div class="btn-wrap">
@@ -229,7 +229,7 @@
   <footer class="bg-dark">
     <p>Proyecto 2 Código Pa'lante 🚀 | Desarrollado por David Reyes | &copy 2023</p>
 
-    <a href="#" id="go-top" class="bg-light circle animar">
+    <a href="#" id="go-top" class="bg-light circle">
       <i class="fa-solid fa-chevron-up"></i>
     </a>
   </footer>
